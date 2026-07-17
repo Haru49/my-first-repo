@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>           
+            body {
+                background: #f3f4f6;
+                padding: 40px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+                select,
+                textarea {
+                    width: 95%;
+                    padding: 5px;
+                    border: 1px solid #ffffff;
+                    border-radius: 6px;
+                }
+
+            button {
+                background-color: #007acc;
+                color: white;
+                border: none;
+                padding: 5px;
+                font-size: 20px;
+                border-radius: 6px;
+                width: 100%;
+            }
+
+            .formbox {
+                display: inline-block;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 10px;
+                background-color:rgb(172, 172, 172);
+            }
+        </style>
+    </head>
+        <form class = "formbox" action="/submit" method="post">
+            <label>名前<br>
+                <input type="text" name="username"><br>
+            </label>
+            <label>メールアドレス<br>
+                <input type="text" name="usermail"><br>
+            </label>
+
+            <label>趣味<br>
+                <input type="checkbox" name="hobby" value="sports" checked > 音楽<br>
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="music"> スポーツ<br>
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="music"> 旅行<br>
+            </label>
+
+            <label>自由記載欄<br>
+                <textarea name="message" rows="8" cols="50"></textarea>
+                <br>
+            </label>
+
+            <button type="submit">送信</button>
+        </form>
+</html>
